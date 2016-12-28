@@ -4,7 +4,7 @@ import {
   TestBed
 } from '@angular/core/testing';
 
-import { AboutModule } from './about.module';
+import { AboutModule } from './registration.module';
 
 export function main() {
    describe('About component', () => {

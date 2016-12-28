@@ -1,10 +1,90 @@
-<p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
+<p>
+    This extended class will offer further in-depth discussions and training on using the latest web development
+    technologies
+    preparing students to enter into the professional work field of web development.
+</p>
 
-<form (submit)="addName()">
-  <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
-  <button type="submit">Add</button>
-</form>
+<h2>When we meet:</h2>
+<p>We will meet after the Faith Homeschool classes dismisses in the computer lab downstairs. We are expecting the class
+    to take about 1 hour to 1.5 hours.</p>
 
+<h2>What we will cover:</h2>
 <ul>
-  <li *ngFor="let name of names">{{name}}</li>
+    <li>Beginner through advanced level Javascript</li>
+    <li>Web frameworks such as Bootstrap and AngularJS which are used by large enterprise companies to build their
+        online web applications.
+    </li>
+    <li>Learn how to use version control systems such as Git. This allows multiple developers to work on the same
+        project and control source code versions.
+    </li>
+    <li>Learn how to create web forms and save information to a backend server, such as the registration page on this
+        site.
+    </li>
+    <li>Occasionally we may work on real world projects such as banking applications and more.</li>
+    <li>Many more items that come with day-to-day development practices</li>
 </ul>
+
+<h2>The goal of the class:</h2>
+<p>
+    The primary goal of this class is to explore all the different aspects of the web technology industry which will
+    allow the
+    student to get an understanding if this is what he or she would like to pursuit as a career option.
+</p>
+<p>
+    If the student wishes to continue learning, it will also be our goal to get them prepared to enter into the
+    professional workplace right out of high school
+    if this is what they choose.
+</p>
+
+
+<h2>Who can join:</h2>
+<p>Any student in 10th, 11th, or 12th grade. We ask the students should be serious about this as we will be fully
+    focused on their success and education.</p>
+
+
+<h2>About the teachers:</h2>
+<div class="teacher-container">
+    <div class="photo">
+        <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/1/005/06a/302/229f005.jpg" />
+    </div>
+    <div class="name">
+        Lucas Hoezee
+    </div>
+    <div class="info">
+        <strong>Experience: </strong><br/>
+        <ul>
+            <li>13 years total experience in the web development industry</li>
+            <li>10 years with backend programming, server administration, and database management</li>
+            <li>Worked on medical apps</li>
+            <li>Banking and financial services sites</li>
+            <li>Many other internal self funded projects</li>
+        </ul>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+
+
+<div class="teacher-container">
+    <div class="photo">
+        <img src="https://media.licdn.com/media/AAEAAQAAAAAAAAkCAAAAJGFiYzdlYjU3LTE4MjAtNGNhMy1iYWFmLWNlMThlNGIxZjg5Mg.jpg" />
+    </div>
+    <div class="name">
+        Kristepher Krebs
+    </div>
+    <div class="info">
+        <strong>Experience: </strong><br/>
+        <ul>
+            <li>2 years total experience in the web development industry</li>
+            <li>Banking and financial services sites</li>
+            <li>2 full years of mobile / smart phone app development</li>
+            <li>Offers great insight to new developers to help bridge the gap between new developers and advanced level developers.</li>
+        </ul>
+    </div>
+
+    <div class="clearfix"></div>
+</div>
+
+
+
+<a [routerLink]="['/registration']">REGISTRATION</a>

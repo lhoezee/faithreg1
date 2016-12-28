@@ -36,6 +36,7 @@ ul {
 li {
   font-weight: 400;
   margin-top: 4px;
+  margin-left: 15px;
 }
 
 input {
@@ -60,4 +61,8 @@ button {
 
 button:hover {
   background-color: #28739e;
+}
+
+.clearfix {
+  clear: both;
 }
