@@ -1,3 +1,6 @@
+# faithreg1
+Faith Homeschool Registration - Group 1
+
 # Introduction
 
 [![Angular Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://angular.io/styleguide)
