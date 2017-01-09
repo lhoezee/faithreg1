@@ -23,7 +23,7 @@ export class RegistrationComponent implements OnInit {
         email: '',
         grade: ''
     };
-    successful: boolean = false;
+    successful: boolean = true;
 
     /**
      * Creates an instance of the HomeComponent with the injected
