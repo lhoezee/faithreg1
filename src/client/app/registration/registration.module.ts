@@ -3,13 +3,12 @@ import { CommonModule } from '@angular/common';
 import { RegistrationComponent } from './registration.component';
 import { RegistrationRoutingModule } from './registration-routing.module';
 import { SharedModule } from '../shared/shared.module';
-import { NameListService } from '../shared/name-list/index';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { RegistrationService } from '../shared/registration/index';
 
 @NgModule({
   imports: [CommonModule, RegistrationRoutingModule, SharedModule],
   declarations: [RegistrationComponent],
   exports: [RegistrationComponent],
-  providers: [NameListService]
+  providers: [RegistrationService]
 })
 export class RegistrationModule { }

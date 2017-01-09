@@ -8,10 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { RegistrationModule } from './registration/registration.module';
 import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  imports: [BrowserModule, HttpModule, AppRoutingModule, RegistrationModule, HomeModule, SharedModule.forRoot(), NgbModule.forRoot()],
+  imports: [BrowserModule, HttpModule, AppRoutingModule, RegistrationModule, HomeModule, SharedModule.forRoot()],
   declarations: [AppComponent],
   providers: [{
     provide: APP_BASE_HREF,

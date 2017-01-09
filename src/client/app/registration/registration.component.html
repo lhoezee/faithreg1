@@ -1,10 +1,30 @@
-<p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
 
-<form (submit)="addName()">
-  <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
-  <button type="submit">Add</button>
-</form>
 
-<ul>
-  <li *ngFor="let name of names">{{name}}</li>
-</ul>
+<div class="register-container">
+    <div class="alert alert-danger" *ngIf="errors.length > 0">
+        <p *ngFor="let error of errors">
+            {{ error }}
+        </p>
+    </div>
+
+    <p>Use the form below to signup for this extended class.</p>
+
+    <form (submit)="register()" *ngIf="!successful">
+        <input [(ngModel)]="registration.firstName" name="firstName" placeholder="First Name" size="30">
+        <input [(ngModel)]="registration.lastName" name="lastName" placeholder="Last Name" size="30"><br/>
+        <input [(ngModel)]="registration.email" name="email" placeholder="Email Address" size="30"><br/>
+        <input [(ngModel)]="registration.grade" name="grade" placeholder="Grade" size="5"><br/>
+        <button type="submit">Register</button>
+    </form>
+
+    <div class="alert alert-success" *ngIf="successful">
+        Registration Completed. Thanks for your interest!
+    </div>
+
+    <div class="spacer"></div>
+
+    <button *ngIf="successful" class="btn btn-primary" (click)="reset()">
+        Register another student
+    </button>
+
+</div>

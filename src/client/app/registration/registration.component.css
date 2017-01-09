@@ -10,3 +10,8 @@ h2 {
   margin-bottom: 0;
   margin-top: 0.83em;
 }
+
+.register-container {
+  margin-top: 20px;
+  width: 55%;
+}
