@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "faithreg1",
   "version": "0.0.0",
-  "description": "Modular starter project for Angular 2 (and beyond) with statically typed build and AoT compilation",
+  "description": "Faith Registration Class",
   "repository": {
-    "url": "https://github.com/mgechev/angular-seed"
+    "url": "https://github.com/lhoezee/faithreg1"
   },
   "scripts": {
     "build.dev": "gulp build.dev --color --env-config dev",
