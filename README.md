@@ -38,13 +38,11 @@ In order to start the seed use:
 
 
 ```bash
-$ git clone --depth 1 https://github.com/mgechev/angular-seed.git
-$ cd angular-seed
+$ git clone --depth 1 https://github.com/lhoezee/faithreg1.git
+$ cd faithreg1
 
 # install the project's dependencies
 $ npm install
-# fast install (via Yarn, https://yarnpkg.com)
-$ yarn install  # or yarn
 
 # watches your files and uses livereload by default
 $ npm start
@@ -80,26 +78,6 @@ In order to start the seed with AoT use:
 ```bash
 # prod build with AoT compilation
 $ npm run build.prod.exp
-```
-
-# Dockerization
-
-The application provides full Docker support. You can use it for both development as well as production builds and deployments.
-
-## How to build and start the dockerized version of the application 
-
-The Dockerization infrastructure is described in the `docker-compose.yml` (respectively `docker-compose.production.yml`.
-The application consists of two containers:
-- `angular-seed` - In development mode, this container serves the angular app. In production mode it builds the angular app, with the build artifacts being served by the Nginx container
-- `angular-seed-nginx` - This container is used only production mode. It serves the built angular app with Nginx.
-
-## Development build and deployment
-
-Run the following:
-
-```bash
-$ docker-compose build
-$ docker-compose up -d
 ```
 
 Now open your browser at http://localhost:5555
